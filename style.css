@@ -1,0 +1,775 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap");
+
+body {
+    margin: 0;
+    font-family: "Quicksand";
+    background-color: #f1f1f1 !important;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.header {
+    text-align: center;
+    padding-bottom: 80px;
+    color: #000000;
+    min-height: 100vh;
+    margin-right: 1400px;
+}
+
+.slogan {
+    font-family: "Quicksand";
+    padding-top: 70px;
+    font-size: 3em;
+}
+
+.naam {
+    color: #ff0000;
+    font-size: 6em;
+    margin-bottom: 40px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+}
+
+.knop {
+    background-color: #ff0000;
+    color: #f1f1f1;
+    padding: 1em;
+    font-weight: bold;
+    font-size: 1.5em;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.titel {
+    color: #ff0000;
+    font-size: 4em;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+}
+
+.tekst {
+    color: #ff0000;
+    font-size: 2em;
+    padding-left: 40px;
+}
+
+.reviewtekst {
+    padding-left: 40px;
+    font-size: 1.5em;
+}
+
+.cvtitel {
+    color: #ff0000;
+    font-size: 2em;
+}
+
+.cvtekst {
+    font-size: 35px;
+}
+
+.ervaring {
+    background-image: url(afbeeldingen/apps/wifi-solid.png);
+    padding: 100px;
+    min-height: 100px;
+    color: #ff0000;
+}
+
+.ervaring-item {
+    border-left: 5px solid #ff0000;
+    padding-left: 20px;
+    margin-bottom: 50px;
+}
+
+.ervaring-item .titel {
+    text-align: left;
+}
+
+.tussenlijn {
+    background-color: hsl(0, 100%, 50%);
+    height: 14px;
+}
+
+.service {
+    padding: 100px;
+    min-height: 100px;
+    color: #ff0000;
+    text-align: center;
+}
+
+.skillz {
+    display: flex;
+}
+
+.skill {
+    background-color: hsl(0, 100%, 50%);
+    padding: 20px;
+    margin: 30px;
+    border-radius: 80px;
+    color: #ffffff;
+}
+
+.testemonials {
+    padding: 100px;
+    color: #000000;
+}
+
+.testemonial {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.testemonial img {
+    width: 150px;
+    height: 150px;
+    filter: drop-shadow(0 0 0.2em #a8a8a8);
+    transition: transform 200ms ease;
+    border-radius: 100px;
+}
+
+.testemonial img:hover {
+    transform: scale(97%);
+}
+
+.testemonial .titel {
+    text-align: left;
+    margin-top: 0em;
+}
+
+#projecten {
+    height: 100vh;
+}
+
+.footer {
+    background-color: hsl(0, 100%, 39%);
+    padding: 50px 200px;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Quicksand", sans-serif;
+}
+
+.footer-text {
+    color: #ffffff;
+    font-size: 1.5em;
+}
+
+#projecten .galerij-kolom img:hover {
+    transform: scale(95%);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+    #projecten .galerij-kolom {
+        flex: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    #projecten .galerij-kolom {
+        flex: 50%;
+    }
+}
+
+nav {
+    background-color: rgb(255, 0, 0);
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 20px 20px;
+}
+
+nav a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: dashed;
+}
+nav a:hover {
+    background-color: rgb(235, 0, 0);
+}
+
+nav ul li a {
+    color: white;
+    font-size: 2rem;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+}
+
+.home-image {
+    background-image: url(afbeeldingen/IMG_0409.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 550px;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+}
+
+.price {
+    color: grey;
+    font-size: 22px;
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.card button:hover {
+    opacity: 0.7;
+}
+
+body,
+html {
+    overflow-x: hidden;
+}
+
+.container-projecten img {
+    width: 20%;
+    padding: 60px;
+}
+
+.container-projecten {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30%;
+}
+
+.collumn1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.collumn1 img {
+    margin-right: 40%;
+}
+
+.collumn1 p {
+    margin-left: 40%;
+}
+
+#ourstores {
+    height: 100vh;
+}
+
+.shoes-image {
+    background-image: url(afbeeldingen/IMG_0359.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300vh;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: calc(10%);
+}
+
+.containershoes {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.containershoes2 {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+
+.containershoes3 {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+
+.containershoes4 {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+
+.stock {
+    color: rgb(137, 228, 0);
+}
+
+.location1 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    background-color: #f1f1f1;
+    border-radius: 20px;
+}
+
+.location1 button {
+    border: none;
+    outline: 0;
+    color: white;
+    background-color: hsl(0, 100%, 39%);
+    text-align: center;
+    cursor: pointer;
+    width: 200px;
+    font-size: 18px;
+    padding: 1em;
+    border-radius: 20px;
+}
+
+.location1 button:hover {
+    opacity: 0.7;
+}
+
+.containerlocation {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+
+.location1 img {
+    border-radius: 20px;
+}
+
+.location1 img:hover {
+    transform: scale(99%);
+    filter: drop-shadow(0 0 0.5em rgb(231, 231, 231));
+    transition: transform 800ms ease;
+    content: url("afbeeldingen/Mechelen-winkel.jpg");
+    /* 0.4s = 400ms*/
+}
+
+.location2 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    background-color: #f1f1f1;
+    border-radius: 20px;
+}
+
+.location2 button {
+    border: none;
+    outline: 0;
+    color: white;
+    background-color: hsl(0, 100%, 39%);
+    text-align: center;
+    cursor: pointer;
+    width: 200px;
+    font-size: 18px;
+    padding: 1em;
+    border-radius: 20px;
+}
+
+.location2 button:hover {
+    opacity: 0.7;
+}
+
+.location2 img {
+    border-radius: 20px;
+}
+
+.location2 img:hover {
+    transform: scale(99%);
+    filter: drop-shadow(0 0 0.5em rgb(231, 231, 231));
+    transition: transform 800ms ease;
+    content: url("afbeeldingen/Knokke-winkel.jpg");
+    /* 0.4s = 400ms*/
+}
+
+.location3 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    background-color: #f1f1f1;
+    border-radius: 20px;
+}
+
+.location3 button {
+    border: none;
+    outline: 0;
+    color: white;
+    background-color: hsl(0, 100%, 39%);
+    text-align: center;
+    cursor: pointer;
+    width: 200px;
+    font-size: 18px;
+    padding: 1em;
+    border-radius: 20px;
+}
+
+.location3 button:hover {
+    opacity: 0.7;
+}
+
+.location3 img {
+    border-radius: 20px;
+}
+
+.location3 img:hover {
+    transform: scale(99%);
+    filter: drop-shadow(0 0 0.5em rgb(231, 231, 231));
+    transition: transform 800ms ease;
+    content: url("afbeeldingen/Antwerpen-winkel.jpg");
+    /* 0.4s = 400ms*/
+}
+
+#ourstores {
+    background-color: #e7e7e7;
+}
+
+.background-image {
+    background-image: url(afbeeldingen/IMG_0393.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: calc(10%);
+}
+
+.aboutus-image {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(afbeeldingen/IMG_0389.jpg);
+    background-size: cover;
+    background-position: 200px;
+    background-attachment: fixed;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #ffffff;
+}
+
+.title {
+    filter: drop-shadow(0 0 0.5em black);
+    transition: transform 500ms ease;
+    /* 0.4s = 400ms*/
+}
+
+.title h1 {
+    font-size: 75 px; /* Adjust the value to make it bigger */
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+}
+
+.title:hover {
+    transition: width 2s, height 4s;
+    transform: scale(70%);
+    opacity: 95%;
+}
+
+#selection {
+    height: 100vh;
+}
+
+.embleem {
+    margin-top: 20px;
+    margin-right: 30em;
+    height: 50px;
+    color: #e7e7e7;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+}
+
+#section-about {
+    display: flex;
+}
+
+.right-column-about,
+.left-column {
+    width: 50%;
+}
+
+#section-about h3 {
+    font-size: 3em;
+    font-weight: 800;
+    padding: 50px;
+    color: #ff0000;
+    font-family: "Quicksand";
+}
+
+#section-about p {
+    font-size: 25px;
+    margin-left: 50px;
+    margin-right: 100px;
+}
+
+.aboutus-text {
+    font-size: 25px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.containercontact {
+    width: 100%;
+    height: 100px;
+    background: #001660;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+Form {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    height: 46rem;
+}
+Form h3 {
+    color: #555;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+Form input {
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: #f5f5f5;
+    font-size: 16px;
+}
+
+form textarea {
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: #f5f5f5;
+    font-size: 16px;
+    height: 200px;
+}
+
+Form button {
+    padding: 15px;
+    background: #ff5361;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+}
+
+.hero {
+    width: 100%;
+    height: 50vh;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.hero .carousel {
+    width: 300px;
+    margin: 100px auto 0;
+    overflow: visible;
+}
+
+.carousel img {
+    -webkit-box-reflect: below 1px
+        linear-gradient(transparent, transparent, #0004);
+}
+
+.video {
+    margin-left: 40rem;
+    margin-right: 40rem;
+    margin-bottom: 50px;
+    margin-top: 60px;
+    border-radius: 20px;
+}
+
+/* Media Query for devices with a maximum width of 800px */
+@media (max-width: 800px) {
+    .header {
+        margin-right: 0;
+    }
+
+    .nav {
+        margin-left: 20px;
+    }
+
+    .home-image {
+        margin-left: 0;
+    }
+}
+
+/* Media Query for devices with a maximum width of 600px */
+@media (max-width: 600px) {
+    .header {
+        padding-bottom: 40px;
+    }
+
+    .slogan {
+        font-size: 2.5em;
+        padding-top: 40px;
+    }
+
+    .naam {
+        font-size: 4em;
+        margin-bottom: 20px;
+    }
+
+    .knop {
+        font-size: 1.2em;
+    }
+
+    .titel {
+        font-size: 3.5em;
+    }
+
+    .tekst {
+        font-size: 1.5em;
+        padding-left: 20px;
+    }
+
+    .reviewtekst {
+        padding-left: 20px;
+        font-size: 1.2em;
+    }
+
+    .cvtitel {
+        font-size: 1.5em;
+    }
+
+    .cvtekst {
+        font-size: 25px;
+    }
+
+    .ervaring {
+        padding: 40px;
+    }
+
+    .ervaring-item {
+        margin-bottom: 30px;
+    }
+
+    .service {
+        padding: 40px;
+    }
+
+    .skill {
+        padding: 15px;
+        margin: 20px;
+        font-size: 16px;
+    }
+
+    .testemonials {
+        padding: 40px;
+    }
+
+    .testemonial img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .card {
+        max-width: 250px;
+    }
+
+    .container-projecten img {
+        width: 40%;
+        padding: 20px;
+    }
+
+    .container-projecten {
+        margin-left: 10%;
+    }
+
+    .collumn1 img {
+        margin-right: 30%;
+    }
+
+    .collumn1 p {
+        margin-left: 30%;
+    }
+
+    .location1 img:hover,
+    .location2 img:hover,
+    .location3 img:hover {
+        transform: scale(99%);
+    }
+
+    .location1 button,
+    .location2 button,
+    .location3 button {
+        font-size: 16px;
+    }
+
+    .aboutus-image .title h1 {
+        font-size: 60px;
+    }
+
+    .aboutus-text {
+        font-size: 20px;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .Form {
+        padding: 2vw 2vw;
+    }
+
+    .Form input,
+    .Form textarea {
+        padding: 15px;
+    }
+
+    .Form button {
+        font-size: 16px;
+        padding: 12px;
+    }
+}
